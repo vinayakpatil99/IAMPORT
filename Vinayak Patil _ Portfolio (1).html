@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vinayak Patil | Identity Security Engineer</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap">
+<style>
+:root{--bg:#050505;--alt:#0d0d0d;--card:#141414;--ink:#f2f2f2;--muted:#a3a3a3;--line:#262626;--g:#76b900;--gt:#76b900;--on:#050505;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#fff;--alt:#f4f4f4;--card:#fff;--ink:#111;--muted:#555;--line:#ddd;--gt:#4b7a00}}
+:root[data-theme="light"]{--bg:#fff;--alt:#f4f4f4;--card:#fff;--ink:#111;--muted:#555;--line:#ddd;--gt:#4b7a00}
+html{scroll-padding-top:calc(68px + env(safe-area-inset-top,0px));scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 Barlow,system-ui,-apple-system,"Segoe UI",sans-serif}
+h1,h2,h3{font-family:"Barlow Condensed","Arial Narrow",system-ui,sans-serif;font-weight:700;line-height:1.05;margin:0}
+.w{max-width:1160px;margin:0 auto;padding:0 24px}
+a:focus-visible,button:focus-visible{outline:3px solid var(--g);outline-offset:3px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:rgba(5,5,5,.88);backdrop-filter:blur(10px);border-bottom:1px solid #262626}
+header .w{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font:700 24px "Barlow Condensed",sans-serif;color:#fff;text-decoration:none;border-left:5px solid var(--g);padding-left:10px}
+nav{display:flex;gap:26px;align-items:center}
+nav a{color:#bbb;text-decoration:none;font-size:15px;font-weight:500}nav a:hover{color:#fff}
+nav .cta{background:var(--g);color:#050505;padding:8px 18px;font-weight:600}
+@media(max-width:760px){nav a:not(.cta){display:none}}
+.hero{position:relative;overflow:hidden;padding:84px 0 96px;background:#050505;color:#f2f2f2}
+#net{position:absolute;inset:0;width:100%;height:100%;opacity:.55}
+.hero .w{position:relative;display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:center}
+@media(max-width:900px){.hero .w{grid-template-columns:1fr}}
+.hero h1{font-size:clamp(52px,9vw,112px);letter-spacing:-.01em;animation:rise .8s cubic-bezier(.2,.7,.2,1) both}
+.hero p{font-size:clamp(18px,2vw,21px);color:#b5b5b5;max-width:540px;margin:22px 0 32px;animation:rise .8s .12s cubic-bezier(.2,.7,.2,1) both}
+.hero .row{animation:rise .8s .24s cubic-bezier(.2,.7,.2,1) both}
+@keyframes rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+.btn{display:inline-block;padding:14px 28px;font:600 16px Barlow,sans-serif;text-decoration:none;margin:0 12px 12px 0;background:var(--g);color:#050505;border:2px solid var(--g)}
+.btn:hover{background:transparent;color:var(--g)}
+.btn.ghost{background:transparent;color:#fff;border-color:#fff}.btn.ghost:hover{border-color:var(--g);color:var(--g)}
+.term{background:rgba(10,10,10,.92);border:1px solid #2c2c2c;border-top:3px solid var(--g);font:14px/1.7 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:#d4d4d4;min-height:300px;box-shadow:0 0 70px rgba(118,185,0,.18)}
+.term .bar{padding:10px 16px;border-bottom:1px solid #2c2c2c;color:#8a8a8a;font-size:12px}
+.term pre{margin:0;padding:18px 18px 22px;white-space:pre-wrap;word-break:break-word}
+.term .ok{color:#76b900}.term .dim{color:#8a8a8a}
+.cur{display:inline-block;width:8px;height:15px;background:#76b900;vertical-align:-2px;animation:bl 1s steps(1) infinite}
+@keyframes bl{50%{opacity:0}}
+.stats{background:var(--alt);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stats .w{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.stat{padding:34px 24px;border-left:1px solid var(--line)}.stat:first-child{border-left:0;padding-left:0}
+.stat b{display:block;font:700 72px "Barlow Condensed",sans-serif;color:var(--gt);line-height:1}
+.stat span{color:var(--muted)}
+section{padding:96px 0}
+section.alt{background:var(--alt)}
+h2{font-size:clamp(38px,5vw,60px);margin-bottom:14px}
+.lead{color:var(--muted);max-width:620px;margin:0 0 48px;font-size:19px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:2px;background:var(--line);border:1px solid var(--line)}
+.cap{background:var(--card);padding:34px 30px;position:relative}
+.cap:before{content:"";position:absolute;left:0;top:0;width:44px;height:4px;background:var(--g);transition:width .25s}
+.cap:hover:before{width:100%}
+.cap h3{font-size:28px;margin-bottom:10px}.cap p{margin:0;color:var(--muted)}
+.tabs{display:flex;gap:0;margin-bottom:0;border-bottom:1px solid var(--line)}
+.tabs button{font:600 18px Barlow,sans-serif;padding:14px 30px;background:none;border:0;border-bottom:4px solid transparent;color:var(--muted);cursor:pointer}
+.tabs button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--g)}
+.panel{display:none;padding:36px 0 0}.panel.on{display:block}
+.panel h3{font-size:36px;margin-bottom:12px}.panel p{margin:0;color:var(--muted);max-width:760px;font-size:19px}
+.case{display:grid;grid-template-columns:1fr 1.5fr;border:1px solid var(--line);border-left:6px solid var(--g);background:var(--card);margin-bottom:22px}
+.case .l{padding:34px}.case .l h3{font-size:38px;margin-bottom:8px}.case .l p{margin:0;color:var(--muted)}
+.case .r{padding:30px 34px;border-left:1px solid var(--line)}.case ul{margin:0;padding-left:20px;color:var(--muted)}.case li{margin-bottom:8px}
+@media(max-width:800px){.case{grid-template-columns:1fr}.case .r{border-left:0;border-top:1px solid var(--line)}}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{padding:10px 20px;border:1px solid var(--line);background:var(--card);font-weight:500}.chip:hover{border-color:var(--g)}
+.tl{border-left:2px solid var(--line);margin-left:6px}
+.tl div{padding:0 0 32px 30px;position:relative}
+.tl div:before{content:"";position:absolute;left:-8px;top:8px;width:14px;height:14px;background:var(--g)}
+.tl h3{font-size:28px}.tl span{color:var(--muted)}
+.band{background:var(--g);color:#050505;padding:96px 0}
+.band h2{font-size:clamp(44px,7vw,88px);max-width:820px}.band p{font-size:20px;margin:16px 0 30px;max-width:520px}
+.band .btn{background:#050505;color:#fff;border-color:#050505}.band .btn:hover{background:transparent;color:#050505}
+.band .btn.ghost{background:transparent;color:#050505}
+footer{background:#050505;color:#8a8a8a;padding:30px 0;font-size:15px}footer a{color:#bbb}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}}
+button.btn{cursor:pointer;font-family:Barlow,sans-serif}
+.hero:before{content:"";position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(rgba(118,185,0,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(118,185,0,.08) 1px,transparent 1px);background-size:48px 48px;-webkit-mask-image:radial-gradient(ellipse at 50% 40%,#000 25%,transparent 75%);mask-image:radial-gradient(ellipse at 50% 40%,#000 25%,transparent 75%)}
+.hero:after{content:"";position:absolute;left:0;right:0;top:-140px;height:140px;pointer-events:none;background:linear-gradient(transparent,rgba(118,185,0,.12),transparent);animation:scan 8s linear infinite}
+@keyframes scan{to{top:100%}}
+#fab{position:fixed;right:20px;bottom:calc(20px + env(safe-area-inset-bottom,0px));z-index:30;display:flex;align-items:center;gap:10px;padding:13px 20px;background:#76b900;color:#050505;border:0;font:600 16px Barlow,sans-serif;cursor:pointer;box-shadow:0 0 30px rgba(118,185,0,.45)}
+#fab i{width:9px;height:9px;border-radius:50%;background:#050505;animation:bl 1.4s infinite}
+#chat{position:fixed;right:20px;bottom:calc(84px + env(safe-area-inset-bottom,0px));z-index:30;width:min(390px,calc(100vw - 32px));height:min(560px,calc(100vh - 140px));display:none;flex-direction:column;background:#090909;color:#e6e6e6;border:1px solid #2c2c2c;border-top:3px solid #76b900;box-shadow:0 0 80px rgba(118,185,0,.25)}
+#chat.open{display:flex}
+#chat .hd{padding:14px 16px;border-bottom:1px solid #2c2c2c;display:flex;justify-content:space-between;align-items:center}
+#chat .hd b{font:700 22px "Barlow Condensed",sans-serif}
+#chat .hd small{display:block;color:#76b900;font:12px ui-monospace,Menlo,Consolas,monospace}
+#chat .hd button{background:none;border:0;color:#aaa;font-size:24px;cursor:pointer}
+#msgs{flex:1;overflow-y:auto;padding:16px;display:flex;flex-direction:column;gap:10px}
+.m{max-width:88%;padding:10px 14px;font-size:15px;line-height:1.5;word-break:break-word}
+.m.b{background:#161616;border:1px solid #2c2c2c;align-self:flex-start}
+.m.u{background:#76b900;color:#050505;align-self:flex-end}
+.m a{display:inline-block;margin:8px 8px 0 0;padding:8px 14px;background:#76b900;color:#050505;font-weight:600;text-decoration:none}
+.dots span{display:inline-block;width:6px;height:6px;margin-right:4px;border-radius:50%;background:#76b900;animation:bl 1s infinite}
+.dots span:nth-child(2){animation-delay:.2s}.dots span:nth-child(3){animation-delay:.4s}
+#chips{display:flex;flex-wrap:wrap;gap:6px;padding:0 16px 10px}
+#chips button{background:none;border:1px solid #3a3a3a;color:#ddd;padding:6px 12px;font:500 13px Barlow,sans-serif;cursor:pointer}
+#chips button:hover{border-color:#76b900;color:#76b900}
+#cf{display:flex;border-top:1px solid #2c2c2c}
+#cf input{flex:1;min-width:0;background:#090909;color:#fff;border:0;padding:14px 16px;font:16px Barlow,sans-serif}
+#cf input:focus{outline:2px solid #76b900;outline-offset:-2px}
+#cf button{background:#76b900;color:#050505;border:0;padding:0 20px;font:600 15px Barlow,sans-serif;cursor:pointer}
+</style>
+</head>
+<body>
+<header><div class="w"><a class="logo" href="#top">Vinayak Patil</a>
+<nav><a href="#capabilities">Capabilities</a><a href="#lifecycle">Lifecycle</a><a href="#work">Work</a><a href="#journey">Journey</a><a class="cta" href="#contact">Contact</a></nav></div></header>
+
+<div class="hero" id="top">
+<canvas id="net" aria-hidden="true"></canvas>
+<div class="w">
+<div>
+<h1>I secure who gets access to what.</h1>
+<p>Associate Identity Security Engineer building Saviynt IGA solutions for enterprises in insurance and healthcare.</p>
+<div class="row"><a class="btn" href="#work">See my work</a><a class="btn ghost" href="#contact">Get in touch</a><button class="btn ghost" id="ask" type="button">Ask my AI agent</button></div>
+</div>
+<div class="term" role="img" aria-label="Animated sample of a new-hire provisioning flow">
+<div class="bar">sample joiner flow (illustration)</div>
+<pre id="log"></pre>
+</div>
+</div></div>
+
+<div class="stats"><div class="w">
+<div class="stat"><b>2</b><span>Enterprise Saviynt clients</span></div>
+<div class="stat"><b>5</b><span>Lifecycle stages automated</span></div>
+<div class="stat"><b>3</b><span>Integration protocols: REST, SOAP, LDAP</span></div>
+</div></div>
+
+<section id="capabilities"><div class="w">
+<h2>What I build</h2><p class="lead">End-to-end identity governance, from the first HR record to the last access removal.</p>
+<div class="grid">
+<div class="cap"><h3>Identity governance</h3><p>Saviynt IGA implementation and access rules built around how the business actually works.</p></div>
+<div class="cap"><h3>Lifecycle automation</h3><p>Joiner, mover and leaver flows driven by HR events, so access changes without manual tickets.</p></div>
+<div class="cap"><h3>Directory integration</h3><p>Active Directory and Entra ID provisioning, OU placement, UAC handling and group-based access.</p></div>
+<div class="cap"><h3>Application integration</h3><p>SuccessFactors and HRMS connected through REST, SOAP, LDAP and native connectors, tested in Postman.</p></div>
+<div class="cap"><h3>Production support</h3><p>Job and connector monitoring, incident troubleshooting, root cause analysis and SLA-driven delivery.</p></div>
+<div class="cap"><h3>ISPM and non-human identity</h3><p>Posture visibility and governance for service accounts and other non-human identities.</p></div>
+</div></div></section>
+
+<section class="alt" id="lifecycle"><div class="w">
+<h2>How an identity moves</h2><p class="lead">Pick a stage to see what the automation does.</p>
+<div class="tabs" role="tablist">
+<button role="tab" aria-selected="true" data-t="j">Joiner</button><button role="tab" aria-selected="false" data-t="m">Mover</button><button role="tab" aria-selected="false" data-t="l">Leaver</button>
+</div>
+<div class="panel on" id="p-j"><h3>Pre-hire and hire</h3><p>A new record arrives from the HR system before the start date. Saviynt creates the identity, provisions the Active Directory account in the correct OU, and assigns the groups the role needs from day one.</p></div>
+<div class="panel" id="p-m"><h3>Update and transfer</h3><p>When a department, location or manager changes, mover and technical rules detect it and adjust attributes and group access automatically, removing what no longer applies.</p></div>
+<div class="panel" id="p-l"><h3>Disable and rehire</h3><p>On exit, the account is disabled with the right UAC handling and access is removed. If the person returns, the rehire flow restores a clean account instead of creating a duplicate.</p></div>
+</div></section>
+
+<section id="work"><div class="w">
+<h2>Client work</h2><p class="lead">Two enterprise Saviynt engagements and one personal build.</p>
+<div class="case"><div class="l"><h3>ICICI Lombard</h3><p>Saviynt IGA implementation</p></div>
+<div class="r"><ul>
+<li>Delivered the full lifecycle: pre-hire, hire, update, disable and rehire.</li>
+<li>Automated AD provisioning and de-provisioning with OU placement, UAC handling and group access.</li>
+<li>Integrated SuccessFactors/HRMS with AD and Entra ID over REST, SOAP, LDAP and connectors.</li>
+<li>Configured mover and technical rules, ISPM and non-human identity controls.</li>
+<li>Validated APIs in Postman and drove UAT scenarios to sign-off.</li></ul></div></div>
+<div class="case"><div class="l"><h3>Narayana Health</h3><p>Saviynt IGA support and enhancements</p></div>
+<div class="r"><ul>
+<li>Monitored jobs, connectors and workflows to keep the platform healthy.</li>
+<li>Resolved incidents with root cause analysis under ITSM and SLA processes.</li>
+<li>Delivered enhancements to technical rules and preprocessors.</li>
+<li>Onboarded new applications into the platform.</li></ul></div></div>
+<div class="case"><div class="l"><h3>ProctoVision</h3><p>Personal project</p></div>
+<div class="r"><ul><li>Online proctoring platform built with Spring Boot, React, OpenCV and TensorFlow.</li></ul></div></div>
+</div></section>
+
+<section class="alt"><div class="w">
+<h2>Toolbox</h2><p class="lead">What I work with.</p>
+<div class="chips"><span class="chip">Saviynt IGA</span><span class="chip">Active Directory</span><span class="chip">Entra ID</span><span class="chip">SuccessFactors</span><span class="chip">REST</span><span class="chip">SOAP</span><span class="chip">LDAP</span><span class="chip">Postman</span><span class="chip">Java</span><span class="chip">Spring Boot</span><span class="chip">React</span><span class="chip">OpenCV</span><span class="chip">TensorFlow</span></div>
+</div></section>
+
+<section id="journey"><div class="w">
+<h2>Journey</h2><p class="lead">From Java developer to identity security.</p>
+<div class="tl">
+<div><h3>Associate Identity Security Engineer</h3><span>ProNoesis Services India Pvt. Ltd., Navi Mumbai. March 2026 to present</span></div>
+<div><h3>Junior Java Developer</h3><span>Apponix Technologies, Hubli</span></div>
+<div><h3>MCA</h3><span>Basaveshwar Engineering College (VTU), 2023 to 2025</span></div>
+<div><h3>B.Sc. Computer Science</h3><span>2020 to 2023</span></div>
+</div></div></section>
+
+<div class="band" id="contact"><div class="w">
+<h2>Let's talk identity security.</h2><p>Open to conversations about IGA projects and new opportunities.</p>
+<a class="btn" href="mailto:vinupatil1728@gmail.com">vinupatil1728@gmail.com</a><a class="btn ghost" href="https://www.linkedin.com/in/vinayak-patil1/" target="_blank" rel="noopener">LinkedIn</a>
+</div></div>
+<footer><div class="w">&copy; Vinayak Patil. Belagavi, Karnataka, India. <a href="mailto:vinupatil1728@gmail.com">Email</a> &middot; <a href="https://www.linkedin.com/in/vinayak-patil1/" target="_blank" rel="noopener">LinkedIn</a></div></footer>
+
+<script>
+document.querySelectorAll('.tabs button').forEach(function(b){b.addEventListener('click',function(){
+document.querySelectorAll('.tabs button').forEach(function(x){x.setAttribute('aria-selected',x===b)});
+document.querySelectorAll('.panel').forEach(function(p){p.classList.remove('on')});
+document.getElementById('p-'+b.dataset.t).classList.add('on');});});
+var still=matchMedia('(prefers-reduced-motion:reduce)').matches;
+(function(){var L=[['dim','$ saviynt event --source hrms'],['ok','[hire] record received'],['','identity created'],['','AD account provisioned'],['','OU placed, UAC set'],['','groups assigned by role'],['ok','[done] access ready on day one']],
+el=document.getElementById('log'),li=0,ci=0,out='';
+function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;')}
+function render(cur){var h=out;if(cur!==null)h+='<span class="'+L[li][0]+'">'+esc(L[li][1].slice(0,ci))+'</span><span class="cur"></span>';el.innerHTML=h;}
+if(still){L.forEach(function(l){out+='<span class="'+l[0]+'">'+esc(l[1])+'</span>\n'});render(null);return;}
+function tick(){if(li>=L.length){setTimeout(function(){out='';li=0;ci=0;tick();},3500);render(null);el.innerHTML=out+'<span class="cur"></span>';return;}
+ci++;render(1);if(ci>L[li][1].length){out+='<span class="'+L[li][0]+'">'+esc(L[li][1])+'</span>\n';li++;ci=0;setTimeout(tick,380);}else setTimeout(tick,28);}
+tick();})();
+(function(){var c=document.getElementById('net'),x=c.getContext('2d'),N=[],P=[],W,H;
+function size(){W=c.width=c.offsetWidth;H=c.height=c.offsetHeight;N=[];var n=Math.min(60,Math.floor(W/20));for(var i=0;i<n;i++)N.push({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.35,vy:(Math.random()-.5)*.35});}
+function draw(){x.clearRect(0,0,W,H);
+for(var i=0;i<N.length;i++){var a=N[i];
+if(!still){a.x+=a.vx;a.y+=a.vy;if(a.x<0||a.x>W)a.vx*=-1;if(a.y<0||a.y>H)a.vy*=-1;}
+for(var j=i+1;j<N.length;j++){var b=N[j],d=Math.hypot(a.x-b.x,a.y-b.y);
+if(d<150){x.strokeStyle='rgba(118,185,0,'+(0.3*(1-d/150))+')';x.beginPath();x.moveTo(a.x,a.y);x.lineTo(b.x,b.y);x.stroke();
+if(!still&&Math.random()<.0006&&P.length<8)P.push({a:a,b:b,t:0});}}
+x.fillStyle='rgba(118,185,0,.8)';x.fillRect(a.x-1.5,a.y-1.5,3,3);}
+for(var k=P.length-1;k>=0;k--){var p=P[k];p.t+=.02;if(p.t>=1){P.splice(k,1);continue;}
+x.fillStyle='#b6f03a';x.beginPath();x.arc(p.a.x+(p.b.x-p.a.x)*p.t,p.a.y+(p.b.y-p.a.y)*p.t,3,0,6.283);x.fill();}
+if(!still)requestAnimationFrame(draw);}
+size();draw();addEventListener('resize',function(){size();if(still)draw();});})();
+</script>
+<button id="fab" aria-expanded="false" aria-controls="chat"><i></i>Ask my AI agent</button>
+<div id="chat" role="dialog" aria-label="Portfolio AI agent">
+<div class="hd"><div><b>Vinayak's AI agent</b><small>online. ask anything or leave a message</small></div><button id="x" aria-label="Close chat">&times;</button></div>
+<div id="msgs" aria-live="polite"></div>
+<div id="chips"></div>
+<form id="cf"><input id="ci" autocomplete="off" placeholder="Type a message" aria-label="Message"><button>Send</button></form>
+</div>
+<script>
+(function(){
+var TO='vinupatil1728@gmail.com',$=function(i){return document.getElementById(i)},
+chat=$('chat'),fab=$('fab'),msgs=$('msgs'),chips=$('chips'),ci=$('ci'),st=0,d={},opened=false,
+LI='<a href="https://www.linkedin.com/in/vinayak-patil1/" target="_blank" rel="noopener">Open LinkedIn</a>',
+KB=[
+[/experience|work|job|career|role|company|pronoesis/,'Vinayak is an Associate Identity Security Engineer at ProNoesis Services India (Navi Mumbai) since March 2026, working on Saviynt IGA for enterprise clients. Before that he was a Junior Java Developer at Apponix Technologies, Hubli.'],
+[/project|icici|narayana|proctovision|client/,'He delivered a Saviynt IGA implementation for ICICI Lombard (full joiner-mover-leaver lifecycle, AD and Entra ID provisioning, SuccessFactors/HRMS integration), supports Narayana Health on Saviynt (monitoring, RCA, enhancements, app onboarding), and built ProctoVision with Spring Boot, React, OpenCV and TensorFlow.'],
+[/skill|tech|stack|tool|saviynt|java|react|ldap|rest|soap|postman/,'Saviynt IGA, Active Directory, Entra ID, SuccessFactors, REST, SOAP, LDAP, Postman, ISPM and non-human identity, plus Java, Spring Boot, React, OpenCV and TensorFlow.'],
+[/educat|study|degree|mca|college|university|bsc/,'MCA from Basaveshwar Engineering College (VTU), 2023 to 2025, and B.Sc. in Computer Science, 2020 to 2023.'],
+[/lifecycle|jml|joiner|mover|leaver|provision/,'He automates all five lifecycle stages: pre-hire, hire, update, disable and rehire, including AD provisioning, OU placement, UAC handling and group access driven by mover and technical rules.'],
+[/where|location|based|city|live/,'Vinayak is based in Belagavi, Karnataka, India.'],
+[/\bwho\b|about|intro|yourself|\b(hi|hello|hey)\b/,'I am the AI assistant on Vinayak Patil\'s portfolio. He is an Identity and Access Management engineer specialising in Saviynt IGA. Ask about his work, or leave him a message.']
+];
+function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;')}
+function say(h,c){var m=document.createElement('div');m.className='m '+c;if(c==='u')m.textContent=h;else m.innerHTML=h;msgs.appendChild(m);msgs.scrollTop=msgs.scrollHeight;return m}
+function bot(h,fn){var t=say('<span class="dots"><span></span><span></span><span></span></span>','b');
+setTimeout(function(){t.innerHTML=h;if(fn)fn(t);msgs.scrollTop=msgs.scrollHeight},still?0:600)}
+function setChips(a){chips.innerHTML='';a.forEach(function(l){var b=document.createElement('button');b.type='button';b.textContent=l;b.onclick=function(){handle(l)};chips.appendChild(b)})}
+function link(p,t,h,ext){var a=document.createElement('a');a.href=h;a.textContent=t;if(ext){a.target='_blank';a.rel='noopener'}p.appendChild(a)}
+function finish(){
+var su='Portfolio message from '+d.n,bd='Name: '+d.n+'\nReply-to: '+d.e+'\n\n'+d.m,
+es=encodeURIComponent(su),eb=encodeURIComponent(bd);
+bot('Thanks, '+esc(d.n)+'. Your message is ready. Choose how to send it to Vinayak:<br>',function(m){
+link(m,'Open in Gmail','https://mail.google.com/mail/?view=cm&fs=1&to='+TO+'&su='+es+'&body='+eb,true);
+link(m,'Open mail app','mailto:'+TO+'?subject='+es+'&body='+eb,false)});
+st=0;d={};setChips(['Experience','Projects','Skills','Education'])}
+function handle(t){say(t,'u');var l=t.toLowerCase();
+if(st===1){d.n=t.slice(0,60);st=2;bot('Nice to meet you, '+esc(d.n)+'. What is your email address, so Vinayak can reply?');return}
+if(st===2){if(!/^\S+@\S+\.\S+$/.test(t)){bot('That email does not look right. Please enter it like name@company.com.');return}d.e=t.slice(0,100);st=3;bot('Thanks. What would you like to tell Vinayak?');return}
+if(st===3){d.m=t.slice(0,1000);finish();return}
+if(/message|contact|email|mail|hire|reach|connect|talk|opportunit|leave/.test(l)){st=1;setChips([]);bot('Happy to pass a message to Vinayak. What is your name?');return}
+if(/linkedin/.test(l)){bot('Here is his LinkedIn profile: '+LI);return}
+for(var i=0;i<KB.length;i++)if(KB[i][0].test(l)){bot(KB[i][1]);return}
+bot('I can tell you about his experience, projects, skills or education, or take a message for him. What would you like?')}
+function toggle(o){chat.classList.toggle('open',o);fab.setAttribute('aria-expanded',o);
+if(o){if(!opened){opened=true;bot('Hi, I am the AI agent for Vinayak Patil\'s portfolio. Ask me about his work, or I can send him a message for you.');setChips(['Experience','Projects','Skills','Education','Message Vinayak'])}ci.focus()}}
+fab.onclick=function(){toggle(!chat.classList.contains('open'))};
+$('x').onclick=function(){toggle(false)};
+$('ask').onclick=function(){toggle(true)};
+document.addEventListener('keydown',function(e){if(e.key==='Escape')toggle(false)});
+$('cf').onsubmit=function(e){e.preventDefault();var v=ci.value.trim();if(!v)return;ci.value='';handle(v)};
+})();
+</script>
+</body>
+</html>
